@@ -81,6 +81,7 @@ static const char *supported_options[] = {
 	"Name",
 	"Class",
 	"DiscoverableTimeout",
+	"AlwaysPairable"
 	"PairableTimeout",
 	"DeviceID",
 	"ReverseServiceDiscovery",
@@ -285,6 +286,16 @@ static void parse_config(GKeyFile *config)
 	} else {
 		DBG("discovto=%d", val);
 		main_opts.discovto = val;
+	}
+
+	boolean = g_key_file_get_boolean(config, "General",
+						"AlwaysPairable", &err);
+	if (err) {
+		DBG("%s", err->message);
+		g_clear_error(&err);
+	} else {
+		DBG("pairable=%s", boolean ? "true" : "false");
+		main_opts.pairable = boolean;
 	}
 
 	val = g_key_file_get_integer(config, "General",
