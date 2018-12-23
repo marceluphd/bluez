@@ -90,8 +90,8 @@ static const a2dp_sbc_t sbc_presets[] = {
 					SBC_ALLOCATION_LOUDNESS,
 		.block_length = SBC_BLOCK_LENGTH_4 | SBC_BLOCK_LENGTH_8 |
 				SBC_BLOCK_LENGTH_12 | SBC_BLOCK_LENGTH_16,
-		.min_bitpool = MIN_BITPOOL,
-		.max_bitpool = MAX_BITPOOL
+		.min_bitpool = SBC_MIN_BITPOOL,
+		.max_bitpool = SBC_MAX_BITPOOL
 	},
 	{
 		.frequency = SBC_SAMPLING_FREQ_44100,
@@ -99,8 +99,8 @@ static const a2dp_sbc_t sbc_presets[] = {
 		.subbands = SBC_SUBBANDS_8,
 		.allocation_method = SBC_ALLOCATION_LOUDNESS,
 		.block_length = SBC_BLOCK_LENGTH_16,
-		.min_bitpool = MIN_BITPOOL,
-		.max_bitpool = MAX_BITPOOL
+		.min_bitpool = SBC_MIN_BITPOOL,
+		.max_bitpool = SBC_MAX_BITPOOL
 	},
 	{
 		.frequency = SBC_SAMPLING_FREQ_48000,
@@ -108,8 +108,8 @@ static const a2dp_sbc_t sbc_presets[] = {
 		.subbands = SBC_SUBBANDS_8,
 		.allocation_method = SBC_ALLOCATION_LOUDNESS,
 		.block_length = SBC_BLOCK_LENGTH_16,
-		.min_bitpool = MIN_BITPOOL,
-		.max_bitpool = MAX_BITPOOL
+		.min_bitpool = SBC_MIN_BITPOOL,
+		.max_bitpool = SBC_MAX_BITPOOL
 	},
 };
 
