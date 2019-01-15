@@ -533,6 +533,10 @@ Methods		void SetConfiguration(object transport, dict properties)
 			already been unregistered.
 
 
+		object Device [readonly, optional]:
+
+			Device object which the endpoint is belongs to.
+
 MediaTransport1 hierarchy
 =========================
 
